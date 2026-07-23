@@ -43,7 +43,7 @@ jobs:
           version: 11
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --ignore-scripts
 
       - name: Install Quartz plugins
         run: npx tsx ./quartz/plugins/loader/install-plugins.ts
